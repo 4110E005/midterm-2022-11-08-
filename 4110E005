@@ -1,7 +1,23 @@
 ## OSI 模型與TCP/IP protocal suite
 ## OSI有七層?簡述其功能
+- 第一層︰實體層（Physical Layer）
+  - 實體層在區域網路上傳送資料框（Data Frame），它負責管理電腦通訊裝置和網路媒體之間的互通。
+- 第二層︰資料連結層（Data Link Layer）
+  - 資料連結層負責網路尋址、錯誤偵測和改錯。
+- 第三層︰網路層（Network Layer）
+  - 網路層決定數據的路徑選擇和轉寄，將網路表頭（NH）加至數據包，以形成封包。網路表頭包含了網路資料。
+- 第四層︰傳輸層（Transport Layer）
+  - 傳輸層把傳輸表頭（TH）加至資料以形成封包。
+- 第五層︰會議層（Session Layer）
+  - 會議層負責在數據傳輸中設定和維護電腦網路中兩台電腦之間的通訊連接。
+- 第六層︰展示層（Presentation Layer）
+  - 表現層把數據轉換為能與接收者的系統格式相容並適合傳輸的格式。
+- 第七層︰應用層（Application Layer）
+  - 應用層提供為應用軟體而設計的介面，以設定與另一應用軟體之間的通訊。
 ## 底下網路設備運作在哪一層? Hub, switch, router, L4-switch, proxy
-## TCP/IP有那些層?寫出與OSI七層模型的對應!
+  - 第三層︰網路層（Network Layer）
+## TCP/IP有哪些層?寫出與OSI七層模型的對應!
+  - 實體層 網路層 傳輸層 應用層
 ## 簡述底下應用層協定(英文全名與簡單功能說明):
 - HTTP vs HTTPs
   - HyperText Transfer Protocol 超文本傳輸協定。
