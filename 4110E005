@@ -78,4 +78,11 @@
   - Internet Control Message Protocol 網際網路控制訊息協定
 - reliable(可靠的) vs unreliable(不可靠的)
 - TCP three-way handshaking(三項交握)
+  - Port : 來源主機以及目的主機的 port number。
+  - Sequence Number：client隨機選取的初始序號1（Sequence Number1,我們簡稱Seq1），用來與server達到同步作用。
+  - Acknowledge Number：第一個步驟，才剛請求建立連線而已，不會有確認號碼，因此這邊暫時全部填0。
+  - TCP封包中flags裡面的Synchronize位元：這個位元會被設定成1，表示這個封包是送出SYN的資訊。
+  - 可接受的 Window Size：設定 client 自己可接受的 Window Size 大小，告知 server 自己可以承受的程度。
 - TCP syn flood attack
+  - SYN Flood攻擊是在TCP連線三向交握通訊模式中，跳過傳送最後ACK資訊，或是在SYN裡面透過假造的IP位址，讓伺服器發送SYN-ACK封包到假造的IP位址，所以永遠無法收到ACK的資訊。
+  - 透過這樣的方式，伺服器可能會花很多時間等抄收通知，造成網路的壅塞讓網站癱瘓。
