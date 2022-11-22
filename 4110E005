@@ -80,6 +80,14 @@
   - 它用於網際網路協定（IP）中傳送控制訊息，提供可能發生在通訊環境中的各種問題回饋。
   - 它與傳輸協定（如TCP和UDP）顯著不同：它一般不用於在兩點間傳輸資料。
 - reliable(可靠的) vs unreliable(不可靠的)
+  - TCP	UDP
+  - 可靠性TCP可靠UDP不可靠
+  - 速度TCP慢UDP快
+  - 傳輸方式TCP封包按順序傳輸UDP封包以串流方式傳輸
+  - 錯誤檢查與修正TCP有UDP無
+  - 壅塞控制TCP有UDP無
+  - 確認TCP有UDP只有檢查碼
+  - 適用服務TCP要求可靠傳輸的服務，例如電子郵件、網頁瀏覽、檔案傳輸UDP即時服務，例如串流媒體、網路電話、網路遊戲
 - TCP three-way handshaking(三項交握)
   - Port : 來源主機以及目的主機的 port number。
   - Sequence Number：client隨機選取的初始序號1（Sequence Number1,我們簡稱Seq1），用來與server達到同步作用。
