@@ -76,6 +76,9 @@
   - IP是一種應用於互聯網的計算機網絡協議
 - ICMP
   - Internet Control Message Protocol 網際網路控制訊息協定
+  - ICMP是網際網路協定套組的核心協定之一
+  - 它用於網際網路協定（IP）中傳送控制訊息，提供可能發生在通訊環境中的各種問題回饋。
+  - 它與傳輸協定（如TCP和UDP）顯著不同：它一般不用於在兩點間傳輸資料。
 - reliable(可靠的) vs unreliable(不可靠的)
 - TCP three-way handshaking(三項交握)
   - Port : 來源主機以及目的主機的 port number。
